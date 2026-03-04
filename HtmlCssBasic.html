@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Form Mahasiswa</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <ul class="menu">
+      <li><a href="index.html">Halaman Mahasiswa</a></li>
+      <li><a href="JSBasic.html">Halaman Javascript</a></li>
+    </ul>
+
+    <h2>Form Pendaftaran Mahasiswa</h2>
+
+    <form onsubmit="return validateForm();">
+      <table>
+        <tr>
+          <td><strong>Nama Mahasiswa</strong></td>
+          <td>
+            <input required type="text" id="namamhs" name="namamhs" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Jenis Kelamin</strong></td>
+          <td>
+            <input type="radio" name="jk" value="Laki-laki" required />
+            Laki-laki
+            <input type="radio" name="jk" value="Perempuan" /> Perempuan
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Program Studi</strong></td>
+          <td>
+            <select id="prodi" required>
+              <option value="">Pilih Prodi</option>
+              <option>Informatika</option>
+              <option>Teknik Industri</option>
+              <option>Sistem Informasi</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Nomor Telepon</strong></td>
+          <td>
+            <input type="number" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Tanggal Lahir</strong></td>
+          <td>
+            <input type="date" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Email</strong></td>
+          <td>
+            <input type="email" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Password</strong></td>
+          <td>
+            <input type="password" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Deskripsi</strong></td>
+          <td>
+            <textarea id="deskripsi" rows="4" required></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Foto</strong></td>
+          <td>
+            <input type="file" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" id="simpan" value="Simpan" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      const validateForm = () => {
+        alert("Data Berhasil Disimpan!");
+        return false;
+      };
+    </script>
+  </body>
+</html>

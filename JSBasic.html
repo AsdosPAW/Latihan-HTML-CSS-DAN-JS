@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Basic</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <ul class="menu">
+      <li><a href="HtmlCssBasic.html">Halaman Contoh</a></li>
+      <li><a href="index.html">Halaman Mahasiswa</a></li>
+    </ul>
+
+    <h2>Contoh Javascript Basic</h2>
+
+    <div class="container">
+      <h3 id="judul">Belajar Javascript Dasar</h3>
+
+      <br />
+
+      <button onclick="tampilAlert()">Alert</button>
+
+      <button onclick="tampilPrompt()">Prompt</button>
+
+      <button onclick="tampilConfirm()">Confirm</button>
+
+      <button onclick="ubahText()">Ubah Judul</button>
+
+      <button onclick="ubahWarna()">Ubah Warna Background</button>
+    </div>
+
+    <script>
+      function tampilAlert() {
+        alert("Halo! Ini contoh alert dari Javascript");
+      }
+
+      function tampilPrompt() {
+        let nama = prompt("Masukkan nama kamu:");
+
+        if (nama) {
+          alert("Halo " + nama + "!");
+        }
+      }
+
+      function tampilConfirm() {
+        let jawab = confirm("Apakah kamu yakin?");
+
+        if (jawab) {
+          alert("Kamu memilih OK");
+        } else {
+          alert("Kamu memilih Cancel");
+        }
+      }
+
+      function ubahText() {
+        document.getElementById("judul").innerHTML =
+          "Judul Sudah Diubah oleh Javascript!";
+      }
+
+      function ubahWarna() {
+        document.body.style.backgroundColor = "#dff9fb";
+      }
+    </script>
+  </body>
+</html>

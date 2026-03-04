@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form - 12111</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <ul class="menu">
+      <li><a href="HtmlCssBasic.html">Kembali ke Halaman Contoh</a></li>
+      <li><a href="JSBasic.html">Halaman Javascript</a></li>
+  </ul>
+
+  <h2>Form Pendaftaran Mahasiswa</h2>
+
+  <form onsubmit="return validateForm()">
+
+    <table cellspacing="4" cellpadding="4">
+
+      <!-- ================================================= -->
+      <!-- TODO 1: Buat field input teks untuk Nama Mahasiswa -->
+      <!-- Ketentuan: -->
+      <!-- type="text" -->
+      <!-- id="namamhs" -->
+      <!-- wajib diisi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 2: Buat radio button untuk Jenis Kelamin -->
+      <!-- Pilihan: -->
+      <!-- Laki-laki -->
+      <!-- Perempuan -->
+      <!-- Gunakan name yang sama agar hanya bisa memilih satu -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 3: Buat dropdown Program Studi -->
+      <!-- id="prodi" -->
+      <!-- opsi: -->
+      <!-- Pilih Prodi -->
+      <!-- Informatika -->
+      <!-- Teknik Industri -->
+      <!-- Sistem Informasi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 4: Buat input Nomor Telepon -->
+      <!-- type="number" -->
+      <!-- wajib diisi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 5: Buat input Tanggal Lahir -->
+      <!-- type="date" -->
+      <!-- wajib diisi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 6: Buat input Email -->
+      <!-- type="email" -->
+      <!-- wajib diisi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 7: Buat input Password -->
+      <!-- type="password" -->
+      <!-- wajib diisi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 8: Buat Fieldset Hal Favorit -->
+      <!-- didalamnya ada 2 fieldset lagi -->
+      <!-- 1. Game -->
+      <!-- checkbox: Roblox, Magic Chess, Mobile Legends, PUBG -->
+      <!-- 2. Film -->
+      <!-- checkbox: Drama, Action, Romance, Comedy, Horror -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 9: Buat textarea Deskripsi -->
+      <!-- id="deskripsi" -->
+      <!-- wajib diisi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 10: Buat input Foto -->
+      <!-- type="file" -->
+      <!-- wajib diisi -->
+      <!-- ================================================= -->
+
+
+      <!-- ================================================= -->
+      <!-- TODO 11: Buat tombol submit -->
+      <!-- id="simpan" -->
+      <!-- value="Simpan" -->
+      <!-- ================================================= -->
+
+
+      <!-- CONTOH FIELD INPUT -->
+      <!--
+      <tr>
+        <td><strong>Nama Mahasiswa</strong></td>
+        <td>
+          <input required type="text" id="namamhs" name="namamhs" size="30">
+        </td>
+      </tr>
+      -->
+
+    </table>
+
+  </form>
+
+  <script>
+    const validateForm = () => alert("Data Berhasil Disimpan !");
+  </script>
+
+</body>
+</html>
